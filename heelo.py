@@ -14,5 +14,5 @@ esse teste
 """
 
 anoNascimento = input("Digite o seu ano de nascimento para saber sua idade: ")
-idade = 2023 - anoNascimento
-print(type(idade2023))
+idade = 2023 - int(anoNascimento)
+print(idade)
