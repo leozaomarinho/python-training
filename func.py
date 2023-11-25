@@ -15,7 +15,7 @@ def verificaEstoque(nome,laptop):
  #FimFunçãoEmprestimoLaptop       
 
 
-def atualizaEstoque(laptop):
+def atualizaEstoque(laptop = 0):
     
     if laptop !=0:
         laptop-=1
