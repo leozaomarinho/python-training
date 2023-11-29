@@ -49,3 +49,5 @@ print(f'O nome de valores no dicionario aluno é {len(aluno)}')
 print(aluno.keys)
 print(aluno.items)
 print(aluno.values)
+
+
