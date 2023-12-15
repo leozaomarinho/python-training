@@ -26,7 +26,7 @@ while True:
         biblioteca.solicitar_livro(locatario,)
         
     elif opcao ==4:
-        biblioteca.adicionar_livro()
+        biblioteca
     
     
 
