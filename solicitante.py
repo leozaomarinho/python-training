@@ -5,4 +5,5 @@ class solicitante:
         
     def __str__(self) -> str:
         return f'Solicicitante {self.nome}. livro pendente: ({'Possui pendencia' if self.livro_pend == True else 'Nao possui pendencia'})'
+    
         

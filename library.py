@@ -1,11 +1,16 @@
 from livro import Livro
+from solicitante import solicitante
 
 class Library:
-    def __init__(self,livros:Livro):
+    def __init__(self):
         self._livros =[]
         
-        def adicionar_livro(self,new_livro):
-            self.livros.append(livros)
+        def adicionar_livro(self):
+            nome = input('Digite o nome do livro: ')
+            categoria = input('Digite a categoria do livro: ')
+            disponivel = True
+            new_livro = Livro(nome, categoria, disponivel)
+            self._livros.append(new_livro)
             
         def listar_livros(self):
             for livro in self._livros:
