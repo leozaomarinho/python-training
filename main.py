@@ -25,7 +25,7 @@ class Program:
             opcao = input('Digite o numero da opcao desejada (0 a 3): ')
             
             if opcao == 1:
-                biblioteca.solicitar_livro()
+                biblioteca.solicitar_livro(locatario,_livros)
                 
             elif opcao ==2:
                 biblioteca.listar_livros()

@@ -25,7 +25,8 @@ class Library:
             if livro.disponivel == False:
                 print('O livro solicitado não esta disponível.')
             else:
-                solicitante.livro_pend = True
-                livro.disponivel=False
-                solicitante.nome_livro = livro.nome
-                print('Emprestimo de livro realizado com sucesso!')
+                if livro in self._livros:
+                    solicitante.livro_pend = True
+                    livro.disponivel=False
+                    solicitante.nome_livro = livro.nome
+                    print('Emprestimo de livro realizado com sucesso!')
