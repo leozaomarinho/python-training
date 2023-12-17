@@ -12,10 +12,20 @@ class Library:
             new_livro = Livro(nome, categoria, disponivel)
             self._livros.append(new_livro)
             
-    def listar_livros(self):
+    def listar_livros(self,livro:Livro):
             for livro in self._livros:
-                print(livro)
+                if livro.disponivel:
+                    print(livro)
         
     
-    def solicitar_livro(self,solicitante:Solicitante,):
-    
+    def solicitar_livro(self,solicitante:Solicitante,livro:Livro):
+        if solicitante.livro_pend == True:
+            print('O solicitante não pode haver livros pendentes de devolução.')
+        else:
+            if livro.disponivel == False:
+                print('O livro solicitado não esta disponível.')
+            else:
+                solicitante.livro_pend = True
+                livro.disponivel=False
+                solicitante.nome_livro = livro.nome
+                print('Emprestimo de livro realizado com sucesso!')
