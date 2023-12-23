@@ -2,11 +2,10 @@ from library import Library
 from solicitante import Solicitante
 from livro import Livro
 
-
-
-class Program:
+class Program():
     
-    def main():
+    @classmethod
+    def main(self):
 
         biblioteca =Library()
         nome_solicitante = input('Qual o seu nome: ')
@@ -24,18 +23,18 @@ class Program:
             opcao = input('Digite o numero da opcao desejada (0 a 3): ')
             
             if opcao == 1:
-                biblioteca.solicitar_livro(locatario,_livros)
+                biblioteca.solicitar_livro(locatario)
                 
             elif opcao ==2:
                 biblioteca.listar_livros()
                 
             elif opcao ==3:
-                biblioteca.devolver_livro()
+                biblioteca.devolver_livro(locatario)
                     
             elif opcao == 4:
                 biblioteca.adicionar_livro()
         
-        
+
 
 
         
