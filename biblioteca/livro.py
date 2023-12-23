@@ -5,4 +5,5 @@ class Livro:
         self.disponivel = disponivel
         
     def __str__(self) -> str:
-        return f'{self.nome} - {self.categoria} -({'Disponível' if self.disponivel else 'Indisponível'})'
+        disponibilidade = {'Disponível' if self.disponivel else 'Indisponível'}
+        return f'{self.nome} - {self.categoria} - {disponibilidade}'
