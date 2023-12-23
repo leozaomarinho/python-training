@@ -9,7 +9,6 @@ class Program:
     def main():
 
         biblioteca =Library()
-
         nome_solicitante = input('Qual o seu nome: ')
         locatario = Solicitante(nome_solicitante)
 
@@ -30,6 +29,9 @@ class Program:
             elif opcao ==2:
                 biblioteca.listar_livros()
                 
+            elif opcao ==3:
+                biblioteca.devolver_livro()
+                    
             elif opcao == 4:
                 biblioteca.adicionar_livro()
         
