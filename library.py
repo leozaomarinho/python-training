@@ -30,6 +30,7 @@ class Library:
                     livro.disponivel=False
                     solicitante.nome_livro = livro.nome
                     print('Emprestimo de livro realizado com sucesso!')
+                    
     def devolver_livro(self,Solicitante:Solicitante):
         livroDevo = input('Digite o nome do livro que esta sendo devolvido: ')
         if livroDevo in self._livros:
