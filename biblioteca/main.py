@@ -24,16 +24,16 @@ class Program():
             opcao = int(input('Digite o numero da opcao desejada (0 a 4): '))
             
             if opcao == 1:
-                biblioteca.solicitar_livro(locatario)
+                biblioteca.solicitar_livro(locatario, biblioteca)
                 
             elif opcao == 2:
-                biblioteca.listar_livros()
+                biblioteca.listar_livros(biblioteca)
                 
             elif opcao == 3:
                 biblioteca.devolver_livro(locatario)
                     
             elif opcao == 4:
-                biblioteca.adicionar_livro(Livro)
+                biblioteca.adicionar_livro()
 
             elif opcao ==0:
                 option = False
