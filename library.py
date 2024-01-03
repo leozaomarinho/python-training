@@ -14,9 +14,11 @@ class Library:
             
             print(f"Livro cadastrado com sucesso!\n")
     def listar_livros(self,livro:Livro):
+            print("----- Lista de livros -----")
             for livro in self._livros:
                 if livro.disponivel:
                     print(livro)
+            print("\n")
         
     
     def solicitar_livro(self,solicitante:Solicitante,livro:Livro):
