@@ -1,5 +1,5 @@
-from livro import Livro
-from solicitante import Solicitante
+from src.livro import Livro
+from src.solicitante import Solicitante
 
 class Library:
     def __init__(self):

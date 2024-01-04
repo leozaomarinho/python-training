@@ -1,6 +1,6 @@
-from library import Library
-from solicitante import Solicitante
-from livro import Livro
+from src.library import Library
+from src.solicitante import Solicitante
+from src.livro import Livro
 
 class Program():
     
@@ -11,6 +11,7 @@ class Program():
         nome_solicitante = input('Qual o seu nome: ')
         locatario = Solicitante(nome_solicitante)
         option = True
+        livro = Livro()
 
         while option:
 
@@ -24,7 +25,7 @@ class Program():
             opcao = int(input('Digite o numero da opcao desejada (0 a 4): '))
             
             if opcao == 1:
-                biblioteca.solicitar_livro(locatario, biblioteca)
+                biblioteca.solicitar_livro(locatario, livro)
                 
             elif opcao == 2:
                 biblioteca.listar_livros(biblioteca)
