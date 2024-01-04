@@ -10,14 +10,16 @@ def livro ():
 def solicitante ():
     return Solicitante("Leonardo")
 class TestLivro:
-    def test_tipo_livro(livro):
+    def test_tipo_livro(self,livro):
         if livro is type(Livro):
             assert True
+            assert livro.disponivel == True
             
-    def test_livro_disp(livro):
-        assert livro == livro
+    def test_livro_disp(self,livro):
+        assert livro.categoria == livro.categoria
         
 class TestSolicitante:
-    def test_valida_solicitante(solicitante):
-        soli = Solicitante("Leonardo")
-        assert soli.nome == "Leonardo"
+    def test_valida_solicitante(self,solicitante):
+        assert solicitante.nome == "Leonardo"
+    
+    
