@@ -9,6 +9,7 @@ def livro ():
 @pytest.fixture
 def solicitante ():
     return Solicitante("Leonardo")
+#testes unitarios
 class TestLivro:
     def test_tipo_livro(self,livro):
         if livro is type(Livro):

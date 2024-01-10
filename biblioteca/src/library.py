@@ -1,5 +1,5 @@
-from src.livro import Livro
-from src.solicitante import Solicitante
+from livro import Livro
+from solicitante import Solicitante
 
 class Library:
     def __init__(self):
@@ -13,6 +13,7 @@ class Library:
             self._livros.append(new_livro)
             
             print(f"Livro cadastrado com sucesso!\n")
+            
     def listar_livros(self,livro:Livro):
             print("----- Lista de livros -----")
             for livro in self._livros:

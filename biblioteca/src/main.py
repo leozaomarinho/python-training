@@ -1,6 +1,6 @@
-from src.library import Library
-from src.solicitante import Solicitante
-from src.livro import Livro
+from library import Library
+from solicitante import Solicitante
+from livro import Livro
 
 class Program():
     

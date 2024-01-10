@@ -1,5 +1,5 @@
 class Livro:
-    def __init__(self,nome,categoria, disponivel):
+    def __init__(self,nome=None,categoria=None, disponivel=None):
         self.nome = nome 
         self.categoria = categoria
         self.disponivel = disponivel
